@@ -12,7 +12,7 @@ const LeadForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/leads', form);
+      await axios.post('https://leadmanagementbackend-quvr.onrender.com/api/leads', form);
       alert('✅ Lead Added Successfully!');
       window.location.reload();
     } catch (err) {

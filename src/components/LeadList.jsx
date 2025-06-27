@@ -5,7 +5,7 @@ const LeadList = () => {
   const [leads, setLeads] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/leads')
+    axios.get('https://leadmanagementbackend-quvr.onrender.com/api/leads')
       .then(res => setLeads(res.data))
       .catch(err => console.error(err));
   }, []);
